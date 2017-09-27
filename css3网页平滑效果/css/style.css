@@ -61,6 +61,23 @@ body{
 	left: 75%;
 }
 
-.st-container input:checked + a{
+.st-container input:checked + a,
+.st-container input:checked:hover +a{
 	background: #821134;
+
+}
+.st-container input:checked + a:after{
+	content: "";
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border:20px solid transparent;
+	border-bottom-color: #821134;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -20px;
+}
+.st-container input:hover + a{
+	background: #AD244F;
 }
