@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task-02</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="task02.css">
+</head>
+<body>
+<input type="text" id="number1">
+<input type="text" id="number2">
+<span id="result"></span>
+<button id="addbtn"></button>
+
+
+	<script >
+	function $(id){
+		return document.getElementById(id);
+	}
+	function renderResult(result){
+		$("result").innerHTML = result;
+	}
+	console.log("Hellow World!");
+
+	// 数组判断
+	function isArray(arr){
+		return arr instanceof Array && arr.constructor == Array;
+	}
+	var ary = new Array();
+	console.log(isArray(ary));
+	//数组判断end
+	// 函数判断
+	function isFunction(fun){
+		return (typeof fun)=="function";
+	}
+	console.log(isFunction(isArray));
+	</script>
+
+</body>
+</html>

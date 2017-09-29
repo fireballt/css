@@ -1,0 +1,6 @@
+
+判断数据类型
+JavaScript中检测对象类型的运算符有：typeof、instanceof，还有对象的constructor属性
+typeof{} //"object"  
+[] instanceof Array; // true 
+typeof arr=="object" && arr.constructor == Array;// 需要确定是object 
