@@ -54,3 +54,24 @@ img{
 }
 .col-sub { float:left; width:190px; min-height:30px; background:#f00; margin-left:-100%; }
 .col-extra { float:left; width:190px; min-height:30px; background:#00f; margin-left:-190px; }
+#red,#yellow,#orange,#green{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+#red{background: red;}
+#yellow{background: yellow;}
+#orange{background: orange;}
+#green{background: green;}
+#c1{overflow: hidden;clear: both;}     /* BFC*/
+#c2{overflow: hidden;}
+
+
+.outer{
+	 border:solid 1px black; width: 200px; padding: 10px;}
+.innerLeft{
+	height: 100px;width: 100px;float:left;background: #ff0;
+}
+.innerRight{
+height: 100px;width: 100px;float:right;background: #090;
+}
