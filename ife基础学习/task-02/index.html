@@ -81,6 +81,30 @@
 	console.log(tarObj.b.b1[0]);    // "hello"
 
 	//克隆end
+	// 对数组进行去重操作，只考虑数组中元素为数字或字符串，返回一个去重后的数组
+	function uniqArray(arr) {
+	    var b = [];
+	    var c = false;
+	    for(var i=0;i<arr.length;i++){
+	    	for(var j=0;j<b.length;j++){
+	    		if(arr[i]==b[j]){
+	    			c = true;
+	    		}
+		    }
+		if(!c){b.push(arr[i]);}		 
+	    }
+	    return b;
+	}
+
+	// 使用示例
+	var a = [1, 3, 5, 7, 5, 3];
+	var b = uniqArray(a);
+	console.log(b); // [1, 3, 5, 7]
+
+	//数组end
+
+
+
 	</script>
 
 </body>
